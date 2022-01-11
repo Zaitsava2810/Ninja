@@ -1,9 +1,11 @@
 /*=======GLOBAL=======*/
 @import "fonts";
+@import "colors";
 @import "mixins";
 
 html {
   font-size: 10px;
+  background: $glblClr;
 }
 
 * {
@@ -49,11 +51,11 @@ body {
   justify-content: start;
   min-height: 100vh;
   overflow-x: hidden;
-  font-family: "Circular Std Book";
+  font-family: "Montserrat";
 }
 
 .container {
-  max-width: 1690px;
+  max-width: 1338px;
   margin: 0 auto;
   padding-right: 10px;
   padding-left: 10px;

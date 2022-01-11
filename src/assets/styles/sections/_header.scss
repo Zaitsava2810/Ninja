@@ -1,0 +1,62 @@
+header {
+  box-shadow: 0px 7px 13px rgba(0, 0, 0, 0.17);
+}
+
+.header__content {
+  @include customFlex;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.main__title {
+  @include text(700, normal, 40px, 49px, $pink);
+}
+
+input {
+  @include FormAndBorder(200px, 50px, $darkgray, 30px);
+  border: none;
+}
+
+input::placeholder {
+  color: $grayLink;
+  font-size: 20px;
+  padding-left: 15px;
+}
+
+input:focus {
+  color: $white;
+  font-size: 20px;
+}
+
+.nav {
+  @include customFlex;
+  align-items: center;
+}
+
+.nav__item {
+  margin-right: 30px;
+}
+
+.nav__btn {
+  margin-left: 30px;
+}
+
+.nav__link {
+  @include text(500, normal, 20px, 24px, $grayLink);
+}
+
+.nav__link:hover {
+  color: $lightgray;
+}
+
+.btn__link {
+  padding: 13px 20px 13px 20px;
+  border: 1px solid $pink;
+  border-radius: 30px;
+}
+
+.btn__link:hover {
+  color: $white;
+  background: $pink;
+}
