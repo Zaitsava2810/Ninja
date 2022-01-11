@@ -1,0 +1,27 @@
+/*=======HEADER=======*/
+@mixin customFlex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+@mixin text($fw, $fst, $fs, $lh, $clr) {
+  font-weight: $fw;
+  font-style: $fst;
+  font-size: $fs;
+  line-height: $lh;
+  color: $clr;
+}
+
+@mixin FormAndBorder($wi, $he, $brdr, $br) {
+  width: $wi;
+  height: $he;
+  background: $brdr;
+  border-radius: $br;
+}
+
+@mixin border_hover {
+  background: $CLRhover;
+  box-shadow: 0px 15px 25px rgba(228, 65, 119, 0.281);
+  border-radius: 10px;
+}
